@@ -1,0 +1,145 @@
+
+
+.mySlides {
+    display: none
+}
+
+.mySlides img{
+    width: 100%;
+    height: 500px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    max-width: 931px;
+    height: 500px;
+    position: relative;
+    margin: 42px auto;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #ffffff;
+    font-size: 21px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 80px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 62px;
+    width: 84px;
+    margin: 0 9px;
+    background-color: #e320d7ab;
+    border-radius: 15%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: white solid 5px;
+}
+
+.active,
+.dot:hover {
+    background-color: #a206fd;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+
+
+.dot-container {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+
+
+.rodape {
+    background: #ff000080;
+    height: 428px;
+    align-items: center;
+    display: flex;
+    margin: 0 20px;
+    border-radius: 6px;
+    padding: 0 54px;
+    color: rgb(197, 193, 193);
+}

@@ -14,15 +14,69 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <script src="/js/script.js"></script>
-    
+    <link rel="stylesheet" href="./css/carousel/carousel.css">
+
+    <script src="./js/carousel/carousel.js"></script>
+    <script src="./js/script.js"></script>
+
     <title>Vanilla Project</title>
 </head>
 
 <body>
-    <header class="header">
-        Hello
+    <header class="cabecalho">
+        <img class="logo" src="" alt="">
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li class="menu-item"><a class="menu-link" href="#" id="ativo"><img src="./img/linkedin.png" alt=""></a>
+                </li>
+                <li class="menu-item"><a class="menu-link" href="#"><img src="./img/github.png" alt=""></a></li>
+                <li class="menu-item"><a class="menu-link" href="#"><img src="./img/email.png" alt=""></a></li>
+
+            </ul>
+        </nav>
     </header>
+   
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade" style="display: block;">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://highsales.digital/images/blog/modelo-de-site-institucional.jpg" >
+            <div class="text">Site Institucional</div>
+        </div>
+
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2020/10/amazon.webp"
+                >
+            <div class="text">E-Commerce</div>
+        </div>
+
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://www.ueepa.com.br/imagens/blog/foto-gerenciar-hospedagem.jpg" >
+            <div class="text">Gerenciador</div>
+        </div>       
+
+    </div>
+
+    <div class="dot-container" style="text-align:center">
+        <span class="dot" onclick="changeByClickDot(0)"></span>
+        <span class="dot" onclick="changeByClickDot(1)"></span>
+        <span class="dot" onclick="changeByClickDot(2)"></span>
+    </div>
+
+    <footer class="rodape">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut semper turpis. Aenean vitae dui nibh.
+            Nunc vitae ex eget quam mattis malesuada. Morbi lorem nisi, rhoncus at nisl non, interdum tempus tortor. Ut
+            fringilla eros in turpis commodo rutrum. Donec metus turpis, vestibulum ac congue quis, sollicitudin vitae
+            risus. Fusce feugiat orci sed odio eleifend, a mattis lectus molestie. Pellentesque sem diam, malesuada nec
+            libero eu, sollicitudin convallis tortor.</p>
+
+    </footer>
+
+
 
 </body>
 
